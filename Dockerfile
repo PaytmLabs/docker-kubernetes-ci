@@ -6,10 +6,11 @@ ARG KUBEVAL_VERSION=0.15.0
 ARG KUSTOMIZE_VERSION=3.6.1
 
 RUN apk add --no-cache --virtual .builddeps \
+       curl \
        tar \
+
     && apk add --no-cache --virtual .rundeps \
        bash \
-       curl \
        git \
 
     && curl -sSfL "https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz" \
