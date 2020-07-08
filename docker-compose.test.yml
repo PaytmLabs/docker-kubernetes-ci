@@ -4,5 +4,5 @@ services:
   sut:
     build: .
     command: /tests/test.sh
-    volumes: &volumes
+    volumes:
       - ./test.sh:/tests/test.sh:ro
