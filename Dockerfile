@@ -10,6 +10,7 @@ RUN apk add --no-cache --virtual .builddeps \
     && apk add --no-cache --virtual .rundeps \
        bash \
        curl \
+       git \
 
     && curl -sSfL "https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz" \
         | tar -zxvf - -C /usr/local/bin --strip-component=1 linux-amd64/helm \

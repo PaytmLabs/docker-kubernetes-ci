@@ -6,6 +6,9 @@ readonly HELM_VERSION=3.2.2
 readonly KUBEVAL_VERSION=0.15.0
 readonly KUSTOMIZE_VERSION=3.6.1
 
+printf ">>> Checking git is installed...\n"
+git --help >/dev/null
+
 printf ">>> Checking helm version is %s...\n" "${HELM_VERSION}"
 [[ "$(helm version --template '{{.Version}}')" == "v${HELM_VERSION}" ]]
 
