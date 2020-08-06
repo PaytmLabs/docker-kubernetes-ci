@@ -9,6 +9,9 @@ version.BuildInfo{Version:"v3.2.2", GitCommit:"a6ea66349ae3015618da4f547677a14b9
 $ docker run --rm paytmcanada/kubernetes-ci:v0.3.1 helm2 version --client
 Client: &version.Version{SemVer:"v2.15.2", GitCommit:"8dce272473e5f2a7bf58ce79bb5c3691db54c96b", GitTreeState:"clean"}
 
+$ docker run --rm paytmcanada/kubernetes-ci:v0.3.1 jb --version
+v0.4.0
+
 $ docker run --rm paytmcanada/kubernetes-ci:v0.3.1 jsonnet --version
 Jsonnet commandline interpreter v0.16.0
 
