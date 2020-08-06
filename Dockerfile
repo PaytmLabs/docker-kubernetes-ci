@@ -1,10 +1,12 @@
 FROM golang:1.14-alpine AS go-builder
 
+ARG JSONNET_VERSION=0.16.0
+
 ENV GO111MODULE='on'
 
 RUN go get \
-        github.com/google/go-jsonnet/cmd/jsonnet@v0.16.0 \
-        github.com/google/go-jsonnet/cmd/jsonnetfmt@v0.16.0
+        "github.com/google/go-jsonnet/cmd/jsonnet@v${JSONNET_VERSION}" \
+        "github.com/google/go-jsonnet/cmd/jsonnetfmt@v${JSONNET_VERSION}"
 
 FROM alpine
 
