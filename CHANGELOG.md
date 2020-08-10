@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Fixed
+- jsonnet: Build from `master` branch for [native Go `std.manifestJsonEx()` implementation](https://github.com/google/go-jsonnet/pull/422)
+
 ## [v0.3.1] - 2020-08-06
 ### Added
 - Add `jb` (jsonnet-bundler)

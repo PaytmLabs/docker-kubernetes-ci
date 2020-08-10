@@ -1,9 +1,11 @@
 FROM golang:1.14-alpine AS go-builder
 
-ARG JSONNET_VERSION=0.16.0
+# https://github.com/google/go-jsonnet/pull/422
+ARG JSONNET_VERSION=0.16.1-0.20200808175936-2e346e53e721
 
 ENV GO111MODULE='on'
 
+RUN apk add --no-cache git
 RUN go get \
         "github.com/google/go-jsonnet/cmd/jsonnet@v${JSONNET_VERSION}" \
         "github.com/google/go-jsonnet/cmd/jsonnetfmt@v${JSONNET_VERSION}"
