@@ -5,7 +5,7 @@ readonly HELM2_VERSION=2.15.2
 readonly HELM_VERSION=3.2.2
 readonly JB_VERSION=0.4.0
 readonly JSONNET_VERSION=0.16.0
-readonly KUBEVAL_VERSION=0.15.0
+readonly KUBEVAL_VERSION=dev
 readonly KUSTOMIZE_VERSION=3.6.1
 
 printf ">>> Checking git is installed...\n"
