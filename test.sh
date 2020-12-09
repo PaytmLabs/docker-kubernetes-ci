@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly HELM2_VERSION=2.15.2
-readonly HELM_VERSION=3.2.2
+readonly HELM2_VERSION=2.17.0
+readonly HELM_VERSION=3.4.1
 readonly JB_VERSION=0.4.0
-readonly JSONNET_VERSION=0.16.0
+readonly JSONNET_VERSION=0.17.0
 readonly KUBEVAL_VERSION=dev
-readonly KUSTOMIZE_VERSION=3.6.1
+readonly KUSTOMIZE_VERSION=3.8.1
 
 printf ">>> Checking git is installed...\n"
 git --help >/dev/null
@@ -25,6 +25,9 @@ printf ">>> Checking jsonnet version is %s...\n" "${JSONNET_VERSION}"
 
 printf ">>> Checking jsonnetfmt version is %s...\n" "${JSONNET_VERSION}"
 [[ "$(jsonnetfmt --version)" == "Jsonnet reformatter v${JSONNET_VERSION}" ]]
+
+printf ">>> Checking jsonnet-lint version is %s...\n" "${JSONNET_VERSION}"
+[[ "$(jsonnet-lint --version)" == "Jsonnet linter v${JSONNET_VERSION}" ]]
 
 printf ">>> Checking kustomize version is %s...\n" "${KUSTOMIZE_VERSION}"
 [[ "$(kustomize version)" == *"Version:kustomize/v${KUSTOMIZE_VERSION} "* ]]

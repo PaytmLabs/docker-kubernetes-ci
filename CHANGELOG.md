@@ -5,6 +5,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.4.0] - 2020-12-09
+### Added
+- Add `jsonnet-lint`
+
+### Changed
+- Upgrade Jsonnet to v0.17.0
+- Upgrade Helm2 to v2.17.0
+- Upgrade Helm to v3.4.1
+- Upgrade Kustomize to v3.8.1
+
 ## [v0.3.2] - 2020-08-10
 ### Fixed
 - jsonnet: Build from `master` branch for [native Go implementation of `std.manifestJsonEx()`](https://github.com/google/go-jsonnet/pull/422)
@@ -32,7 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial commit
 
-[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.3.2...HEAD
+[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.4.0...HEAD
+[v0.4.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.3.2...v0.4.0
 [v0.3.2]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.3.1...v0.3.2
 [v0.3.1]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.3.0...v0.3.1
 [v0.3.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.2.0...v0.3.0
