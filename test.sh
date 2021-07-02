@@ -2,14 +2,17 @@
 set -euo pipefail
 
 readonly HELM2_VERSION=2.17.0
-readonly HELM_VERSION=3.4.1
+readonly HELM_VERSION=3.5.1
 readonly JB_VERSION=0.4.0
 readonly JSONNET_VERSION=0.17.0
-readonly KUBEVAL_VERSION=dev
-readonly KUSTOMIZE_VERSION=3.8.1
+readonly KUSTOMIZE_VERSION=3.9.4
+readonly KUBEVAL_VERSION=0.16.1
 
 printf ">>> Checking git is installed...\n"
-git --help >/dev/null
+if ! git --help >/dev/null; then
+  echo ">>> git not installed properly."
+  exit 1
+fi
 
 printf ">>> Checking helm version is %s...\n" "${HELM_VERSION}"
 [[ "$(helm version --template '{{.Version}}')" == "v${HELM_VERSION}" ]]
