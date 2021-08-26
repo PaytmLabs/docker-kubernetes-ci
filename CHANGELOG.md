@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.7.0] - 2021-08-26
+### Changed
+- Replace `argocd-util` by `argocd`
+- Upgrade Helm to v3.6.0
+- Upgrade Kustomize to v4.2.0
+- Upgrade Argo CD to v2.1.1
+
 ## [v0.6.0] - 2021-07-12
 ### Added
 - Add `argocd-util`
@@ -54,7 +61,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial commit
 
-[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.7.0...HEAD
+[v0.7.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.5.0...v0.7.0
 [v0.6.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.3.2...v0.4.0
