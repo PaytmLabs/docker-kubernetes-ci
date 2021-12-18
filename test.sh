@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly ARGOCD_VERSION=2.1.1
+readonly ARGOCD_VERSION=2.2.1
 readonly HELM2_VERSION=2.17.0
-readonly HELM_VERSION=3.6.0
+readonly HELM_VERSION=3.7.1
 readonly JB_VERSION=0.4.0
 readonly JSONNET_VERSION=0.17.0
 readonly KUSTOMIZE_VERSION=4.2.0
 readonly KUBEVAL_VERSION=0.16.1
 readonly PROMETHEUS_VERSION=2.28.0
+
+printf ">>> Checking bash is installed...\n"
+if ! bash --help >/dev/null; then
+  echo ">>> bash not installed properly."
+  exit 1
+fi
 
 printf ">>> Checking git is installed...\n"
 if ! git --help >/dev/null; then
