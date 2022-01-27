@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-  sut:
-    build: .
-    command: /tests/test.sh
-    volumes:
-      - ./test.sh:/tests/test.sh:ro

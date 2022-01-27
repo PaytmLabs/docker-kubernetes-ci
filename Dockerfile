@@ -7,6 +7,7 @@ ENV GO111MODULE='on'
 
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
+# hadolint ignore=DL3018
 RUN apk add --no-cache git \
     && go get \
         "github.com/google/go-jsonnet/cmd/jsonnet-lint@v${JSONNET_VERSION}"
@@ -22,8 +23,14 @@ ARG KUBEVAL_VERSION=0.16.1
 ARG KUSTOMIZE_VERSION=4.2.0
 ARG PROMETHEUS_VERSION=2.28.0
 
+LABEL \
+  org.opencontainers.image.source="https://github.com/PaytmLabs/docker-kubernetes-ci" \
+  org.opencontainers.image.url="https://github.com/PaytmLabs/docker-kubernetes-ci" \
+  org.opencontainers.image.licenses="MIT"
+
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
+# hadolint ignore=DL3018
 RUN apk add --no-cache --virtual .builddeps \
        curl \
        tar \
