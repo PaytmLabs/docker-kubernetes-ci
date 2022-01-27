@@ -31,6 +31,7 @@ RUN apk add --no-cache --virtual .builddeps \
        bash \
        git \
        jq \
+       openssh-client \
     && curl -sSfL "https://github.com/argoproj/argo-cd/releases/download/v${ARGOCD_VERSION}/argocd-linux-amd64" -o /usr/local/bin/argocd \
     && chmod +x /usr/local/bin/argocd \
     && curl -sSfL "https://github.com/google/go-jsonnet/releases/download/v${JSONNET_VERSION}/go-jsonnet_${JSONNET_VERSION}_Linux_x86_64.tar.gz" \

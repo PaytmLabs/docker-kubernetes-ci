@@ -28,6 +28,12 @@ if ! jq --help >/dev/null; then
   exit 1
 fi
 
+printf ">>> Checking ssh client is installed...\n"
+if ! ssh -V 2>/dev/null; then
+  echo ">>> ssh client not installed properly."
+  exit 1
+fi
+
 printf ">>> Checking argocd version is %s...\n" "${ARGOCD_VERSION}"
 [[ "$(argocd version --client --short)" == "argocd: v${ARGOCD_VERSION}+"* ]]
 

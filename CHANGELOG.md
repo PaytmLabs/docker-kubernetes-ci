@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.8.1] - 2022-01-27
+### Fixed
+- Add `openssh-client` for Git over SSH
+
 ## [v0.8.0] - 2021-12-17
 ### Changed
 - Upgrade Helm to v3.7.1
@@ -66,7 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial commit
 
-[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.8.0...HEAD
+[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.8.1...HEAD
+[v0.8.1]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.8.0...v0.8.1
 [v0.8.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.7.0...v0.8.0
 [v0.7.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.6.0...v0.7.0
 [v0.6.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.5.0...v0.6.0
