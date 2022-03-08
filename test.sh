@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-readonly ARGOCD_VERSION=2.2.1
+readonly ARGOCD_VERSION=2.3.0
 readonly HELM2_VERSION=2.17.0
-readonly HELM_VERSION=3.7.1
+readonly HELM_VERSION=3.8.0
 readonly JB_VERSION=0.4.0
-readonly JSONNET_VERSION=0.17.0
-readonly KUSTOMIZE_VERSION=4.2.0
+readonly JSONNET_VERSION=0.18.0
+readonly KUSTOMIZE_VERSION=4.4.1
 readonly KUBEVAL_VERSION=0.16.1
-readonly PROMETHEUS_VERSION=2.28.0
+readonly PROMETHEUS_VERSION=2.33.4
 
 printf ">>> Checking bash is installed...\n"
 if ! bash --help >/dev/null; then
@@ -47,7 +47,7 @@ printf ">>> Checking jb version is %s...\n" "${JB_VERSION}"
 [[ "$(jb --version 2>&1)" == "v${JB_VERSION}" ]]
 
 printf ">>> Checking jsonnet version is %s...\n" "${JSONNET_VERSION}"
-[[ "$(jsonnet --version)" == "Jsonnet commandline interpreter v${JSONNET_VERSION}" ]]
+[[ "$(jsonnet --version)" == "Jsonnet commandline interpreter (Go implementation) v${JSONNET_VERSION}" ]]
 
 printf ">>> Checking jsonnetfmt version is %s...\n" "${JSONNET_VERSION}"
 [[ "$(jsonnetfmt --version)" == "Jsonnet reformatter v${JSONNET_VERSION}" ]]
