@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.10.0] - 2023-02-15
+### Changed
+- Upgrade Kustomize to v4.5.5
+
 ## [v0.9.0] - 2022-03-07
 ### Changed
 - Use ghcr.io as container registry
@@ -83,7 +87,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial commit
 
-[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.9.0...HEAD
+[Unreleased]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.10.0...HEAD
+[v0.9.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.9.0...v0.10.0
 [v0.9.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.8.1...v0.9.0
 [v0.8.1]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.8.0...v0.8.1
 [v0.8.0]: https://github.com/PaytmLabs/docker-kubernetes-ci/compare/v0.7.0...v0.8.0
